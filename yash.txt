@@ -1,0 +1,44 @@
+#1
+a=int(input())
+print(a)
+#2
+x,y=map(int,input().split())
+print(f"sum={x+y}")
+#3
+print(f"sum={x+y}")
+print(f"sub={x-y}")
+print(f"mul={x*y}")
+print(f"floordiv={x//y}")
+print(f"mod={x%y}")
+#4
+print(f"perimeter of rectangle:{2*(x+y)}")
+#5
+print(f"Area of rectangle:{x*y}")
+#6
+r=float(input())
+print(f"circuference of circle:{2*3.14*r}")
+print(f"Area of circle:{3.14*(r*r)}")
+#7
+z=int(input())
+print(f"meter:{z//100} kilometer={z//100000}")
+#8
+y=float(input("celcius:"))
+print(f"fahrenheit:{(c*9/5)+32}")
+#9
+x=float(input("fahrenheit:"))
+print(f"celcius:{(x-32)*5/9}")
+#10
+k=input("enter days:")
+y=k/365
+w=(k%365)/7
+days=(k%365)%7
+print(f"{k}days={y}years,{w}weeks,{days}days")
+#16
+a,b,c,d,e=map(int,input().split())
+print(f"total:{a+b+c+d+e} avg:{a+b+c+d+e//5} percentage:{(({a+b+c+d+e)/500)*100}")
+#17
+p,t,r=map(int,input().split())
+print(f"simpleint:{(p*t*r)/100}")
+#18
+print(f"compoundint:{(p*(1+(r/100))**t}")
+
