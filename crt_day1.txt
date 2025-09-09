@@ -1,0 +1,249 @@
+#1
+a,b=map(int,input().split())
+if a>b :
+    print(f"Maximum:{a}")
+else:
+    print(f"Maximum:{b}")
+#2
+a,b,c=map(int,input().split())
+if a>b and a>c:
+    print(f"Maximum:{a}")
+elif b>a and b>c:
+    print(f"Maximum:{b}")
+    
+else:
+    print(f"Maximum:{c}")
+#3
+a=int(input())
+if a>0 :
+    print("positive")
+elif a<0:
+    print("negative")
+else:
+    print("zero")    
+#4
+n=int(input())
+if(n%2==0):
+    print("even")
+else:
+    print("odd")
+#6
+n=int(input())
+if((n%4==0 and n%100!=0) or (n%400==0)):
+    print("leap year ")
+else:
+    print("not leap year")
+#7
+a=input()
+if(97<=ord(a)<123 and 65<=ord(a)<91 ):
+    print("is alphabet")
+else:
+    print("not alphabet")
+#8
+a=input()
+if( a=='a'or a=='e'or a=='i'or a=='o' or a=='u'):
+    print("is vowel")
+else:
+    print("is consonant")
+#9
+a=input()
+if( a>='a' and a<='z' or a>='A' and b>='Z'):
+    print("is alphabet")
+elif(a>='0' and a<='9'):
+    print("is digit")
+else:
+    print("special char")
+#10
+a=input()
+if(a>='65' and a<'91'):
+    print("uppercase")
+else:
+    print("lowercase")
+#11
+a=int(input())
+if(a==1 or a==3 or a==5 or a==7 or a==8 or a==10 or a==12):
+    print("it contains 31 days")
+elif(a==2):
+    print("it contain 28 days")
+else:
+    print("it contain 30 days")
+#12
+a=int(input())
+if (week == 1)
+    printf("Monday")
+else if (week == 2)
+    printf("Tuesday")
+else if (week == 3)
+    printf("Wednesday")
+else if (week == 4)
+    printf("Thursday")
+else if (week == 5)
+    printf("Friday")
+else if (week == 6)
+    printf("Saturday")
+else if (week == 7)
+    printf("Sunday")
+else
+    printf("Invalid Input")
+#14
+a,b,c=map(int,input().split())
+if(a+b+c==180 and (a>0 and b>0 and c>0)):
+    print("triangle is valid")
+else:
+    print("invalid")
+#15
+a,b,c=map(int,input().split())
+if(a+b>c and b+c>a and c+a>b and (a>0 and b>0 and c>0)):
+    print("triangle is valid")
+else:
+    print("invalid")
+#17
+import math
+a,b,c=map(int,input().split())
+d=(b*b)-(4*a*c)
+if d>0:
+    r1=-b + math.sqrt(d)/2*a
+    r2=-b - math.sqrt(d)/2*a
+elif(d==0):
+    r1=r2=-b/(2*a)
+else:
+    r1=r2=-b/(2*a)
+    i=math.sqrt(-d)/(2*a)
+#18
+   a=int(input("cost price"))
+b=int(input("selling price"))
+print(f"profit:{b-a}")
+#19
+print("input 5 subject marks:")
+l=[]
+m=int(input())
+l.append(m)
+for i in range(4):
+    m=int(input())
+    l.append(m)
+p=(sum(l)/500)*100
+if(p>90):
+    print("grade a")
+elif(p>80):
+     print("grade b")
+elif(p>=70):
+     print("grade c")
+elif(p>=60):
+    print("grade d")
+else:
+     print("grade e")
+    
+#20
+basic_salary =int(input("Input basic salary:"))
+if basic_salary <= 10000:
+    hra = 0.20 * basic_salary
+    da = 0.80 * basic_salary
+elif basic_salary <= 20000:
+    hra = 0.25 * basic_salary
+    da = 0.90 * basic_salary
+else:
+    hra = 0.30 * basic_salary
+    da = 0.95 * basic_salary
+gross_salary = basic_salary + hra + da
+print(f"Gross salary = {gross_salary}")
+
+#21
+n=int(input())
+if n<=50:
+    bill=n*0.50
+elif n<=150:
+    bill=50*0.50+((n-50)*0.75)
+elif n<=250:
+    bill=50*0.50+(100*0.75)+((n-150)*1.20)
+    
+else:
+    bill=50*0.50+(100*0.75)+(100*1.20)+ (n-250)*1.50
+tb=bill*0.20+bill
+print(tb)
+SWITCH CASE
+#1
+w=int(input())
+match w :
+    case 1:
+        print('mondat')
+    case 2:
+        print("tuesday")
+
+    case 3:
+        print("wed")
+    case 4:
+        print("thursday")
+    case 5:
+        print("fri")
+    case 6:
+        print("sat")
+    case 7:
+        print("sunday")
+  
+#2
+month = int(input())
+match month:
+    case 1 | 3 | 5 | 7 | 8 | 10 | 12:
+        print("Total number of days = 31")
+    case 4 | 6 | 9 | 11:
+        print("Total number of days = 30")
+    case 2:
+        print("Total number of days = 28 or 29")
+    case _:
+        print("Invalid ")
+#3
+
+a=input()
+match a :
+    case 'a' | 'e'| 'i' | 'o'|'u':
+        print('vowel')
+    case _:
+        print("consonant")
+#4
+
+a=int(input())
+b=int(input())
+match a and b:
+    case _ if a>b:
+        print(f"max:{a}")
+    case _:
+        print(f"max{b}")
+#5
+
+a=int(input())
+match a :
+    case _ if a%2==0:
+        print(f"even:{a}")
+    case _:
+        print(f"odd{a}")
+#6
+
+a=int(input())
+match a :
+    case _ if a>0:
+        print(f"positive:{a}")
+    case _ if a<0:
+        print(f"negative{a}")
+    case _:
+        print("zero")
+#7
+import math
+a=int(input())
+b=int(input())
+c=int(input())
+d=(b*b)-(4*a*c)
+match a :
+    case _ if d>0:
+        r1=-b+math.sqrt(d)/(2*a)
+        r1=-b-math.sqrt(d)/(2*a)
+        print(f"roots:{r1} and {r2}")
+    case _ if d==0:
+        r1=r2=-b/2*a
+        print(f"root{r1}")
+    case _:
+        r1=r2=-b/2*a
+        i=math.sqrt(-d)/(2*a)
+        print(f"root{r1} and imag{i}")
+
+
+                                                                                               
