@@ -245,5 +245,22 @@ match a :
         i=math.sqrt(-d)/(2*a)
         print(f"root{r1} and imag{i}")
 
+#8
+a=int(input())
+op=input()
+b=int(input())
+match op :
+    case '+':
+        print(f"{a+b}")
+    case '-':
+        print(f"{a-b}")
+    case '*':
+        print(f"{a*b}")
+    case '//':
+        print(f"{a//b}")
+    case '%':
+        print(f"{a%b}")
+    case '**':
+        print(f"{a**b}")
 
                                                                                                
